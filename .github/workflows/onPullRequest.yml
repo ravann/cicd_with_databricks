@@ -34,7 +34,7 @@ jobs:
          local-notebook-path: ./src/main/tests/test_all.py
          notebook-params-json: >
            {
-             "num_rows":"1000",
+             "num_rows":"1200",
              "env":"local"
            }
          databricks-host: ${{secrets.DATABRICKS_HOST_PRD}}
@@ -43,5 +43,5 @@ jobs:
            {
              "num_workers": 1,
              "spark_version": "11.3.x-scala2.12",
-             "node_type_id": "i3.xlarge"
+             "node_type_id": "Standard_DS4_v2"
            }
